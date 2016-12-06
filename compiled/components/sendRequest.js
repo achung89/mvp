@@ -1,0 +1,8 @@
+'use strict';
+
+var sendRequest = function sendRequest(query, callback) {
+  $.get('http://127.0.0.1:1337/' + query).done(function (data) {
+    callback(data);
+  });
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL2NvbXBvbmVudHMvc2VuZFJlcXVlc3QuanMiXSwibmFtZXMiOlsic2VuZFJlcXVlc3QiLCJxdWVyeSIsImNhbGxiYWNrIiwiJCIsImdldCIsImRvbmUiLCJkYXRhIl0sIm1hcHBpbmdzIjoiOztBQUFBLElBQUlBLGNBQWMsU0FBZEEsV0FBYyxDQUFDQyxLQUFELEVBQVFDLFFBQVIsRUFBcUI7QUFDckNDLElBQUVDLEdBQUYsQ0FBTSwyQkFBeUJILEtBQS9CLEVBQXNDSSxJQUF0QyxDQUEyQyxVQUFTQyxJQUFULEVBQWM7QUFDdkRKLGFBQVNJLElBQVQ7QUFDRCxHQUZEO0FBR0QsQ0FKRCIsImZpbGUiOiJzZW5kUmVxdWVzdC5qcyIsInNvdXJjZXNDb250ZW50IjpbInZhciBzZW5kUmVxdWVzdCA9IChxdWVyeSwgY2FsbGJhY2spID0+IHtcbiAgJC5nZXQoJ2h0dHA6Ly8xMjcuMC4wLjE6MTMzNy8nK3F1ZXJ5KS5kb25lKGZ1bmN0aW9uKGRhdGEpe1xuICAgIGNhbGxiYWNrKGRhdGEpO1xuICB9KVxufSJdfQ==

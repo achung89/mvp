@@ -1,0 +1,50 @@
+write on to mongo
+//assume that saving from windows computer creates compatible text file
+
+use react, since the interface is so simple
+
+-on server load
+
+fs.readFile
+	call splitDict
+		splitDict will create an object with 2 keys, one with the words, one with the phonetic spelling
+	cal populateMongo
+		take a database and populate it with above object
+	
+-index.html
+input field:
+	if not a real word
+		try-again
+	if a realword
+		look up phonetic spelling
+		see if that phonetic spelling is located in other words
+		if yes, diplay 10 (let them navigate to see more)
+		if no, display no puns found
+
+-look up of words
+recieve input from client as a get request
+takes word from get request and finds word in mongo
+see if the phonetic dictionary has a words that you can make a pun with
+	if yes: make an array of those words and return it
+	if no: return "sorry no words"
+
+Tests
+
+describe: server can set up correctly
+use roboMongo to make sure it exists
+test to see if splitDict returns an object with expected properties
+see if populateMongo will populate the database with respective dictionary
+
+describe: server can handle requests
+a look up of a word will return the correct word from mongo
+a look up of puns from mongo will return an array of words
+
+describe: requests will come back successfully
+if an invalid word is given, returns 'try again'
+a get request will find the correct word in the dictionary?
+a get request will return an array of words 
+
+make sure that making multiple requests will not bug up webpage
+
+extra functions: 
+save list of puns
