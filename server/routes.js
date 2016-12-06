@@ -4,6 +4,7 @@ var morgan = require('morgan');
 module.exports = function (app, express) {
 
   app.use(morgan());
+  app.use(express.static('../index.html'));
   app.get('/',requestHandler.noWord);
   app.get('/*',requestHandler.wordSearch);
 
