@@ -14,11 +14,11 @@ require('./routes.js')(app, express);
 
 
 
-// dictionary.remove({}, function(err) {
-//    console.log('collection removed');
-//    console.log("populating");
-//    helper.populateMongo();
-// });
+dictionary.remove({}, function(err) {
+   console.log('collection removed');
+   console.log("populating");
+   helper.populateMongo();
+});
 
 // start listening to requests on port 1337
 app.listen(1337,(err) => {
