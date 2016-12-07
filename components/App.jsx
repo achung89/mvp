@@ -1,3 +1,4 @@
+
 class App extends React.Component {
 
   constructor (props) {
@@ -17,9 +18,6 @@ class App extends React.Component {
     });
   }
 
-  test (query) {
-    console.log('hihihihihih');
-  }
 
   render () {
     return (

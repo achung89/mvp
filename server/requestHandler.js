@@ -13,7 +13,8 @@ module.exports = {
     res.send(["Please enter a word"]);
   },
   wordSearch: (req,res,next) =>{
-    var word = req.url.substr(1);
+    var word = req.url.substr(7);
+    console.log(word);
     var query = database.where({word:word.toUpperCase()});
 
     Promise.promisify(query.findOne)
