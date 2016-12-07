@@ -4,7 +4,7 @@ var sendRequest = (query, callback) => {
   }else{
     query = 'query/'+query;
   }
-  $.get('http://127.0.0.1:1337/'+query).done(function(data){
+  $.get('http://http://45.55.145.5:1337/'+query).done(function(data){
     callback(data);
   })
 }
