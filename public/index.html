@@ -23,7 +23,9 @@
   <hr>
   </form>
   <div ng-controller="Alliterations">
-    <>
+    <div ng-repeat="word in list.list track by $index">
+      <div>{{word.toLowerCase()}}</div>
+    </div>
   </div>
 
   <!--<script src = '../compiled/index.js'></script>-->
