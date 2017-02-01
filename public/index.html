@@ -17,13 +17,14 @@
     <title>pun-app</title>
   </head>
   <body ng-app= "my-app">
-  <form name= "entry" ng-controller="FormController">
-    <input type = "text" ng-model=".word" placeholder="enter word here"></input>
+  <form name="entry" ng-controller="FormController" ng-submit="submit ( word )">
+    <input type = "text" ng-model="word" placeholder="enter word here"></input>
     <input type = "submit"></input>
   <hr>
-  {{.word}}
   </form>
-  <hr>
+  <div ng-controller="Alliterations">
+    <>
+  </div>
 
   <!--<script src = '../compiled/index.js'></script>-->
 </html>
